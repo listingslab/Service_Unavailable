@@ -23,6 +23,7 @@
 				_btn ('._button', 'home', true);
 				setTimeout(function(){
 					try {
+						_ping_server ();
 						_css ($('#_main'), 'visibility', 'visible');
 					}catch (err){
 						alert (err);	
