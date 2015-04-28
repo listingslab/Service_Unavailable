@@ -28,6 +28,13 @@
 						alert (err);	
 					}
 				},500);
+				setTimeout(function(){
+					try {
+						$('#_message').fadeOut();
+					}catch (err){
+						alert (err);	
+					}
+				},2500);
 			});
 		</script>
 		<!-- End Include javascripts -->
@@ -64,16 +71,6 @@
 				width: 74%;
 				float:left;
 			}
-			
-			#_main .title {
-				float:right;
-			}
-			#_main .yellow {
-				color: #ffdb00;
-			}
-			#_main .blue {
-				color: #38c1f1;
-			}
 		</style>
 	</head>
 	<body>
@@ -97,7 +94,7 @@
 				<div id="_right">
 					
 					
-<div class="ui-widget">
+<div id="_message" class="ui-widget">
 	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
 		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
 		<strong>Service Unavailable</strong> The rackspace load balancer service cannot find Foxtrot or Oscar
