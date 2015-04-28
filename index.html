@@ -17,11 +17,10 @@
 		<script src="http://listingslabcloud.com/js/service_unavilable.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-			//alert ('btn');
+				//alert ('btn');
 				sa = [];
 				sa ['version'] = '2.0.1';
-				_btn ('._button', 'heart', true);
-				_btn ('.email', 'mail-closed', true);
+				_btn ('._button', 'home', true);
 				setTimeout(function(){
 					try {
 						_css ($('#_main'), 'visibility', 'visible');
@@ -59,15 +58,15 @@
 			}
 			#_main #_left {
 				width: 24%;
-				float:left;
+				float:right;
 			}
 			#_main #_right {
 				width: 74%;
-				float:right;
+				float:left;
 			}
 			
 			#_main .title {
-				float:left;
+				float:right;
 			}
 			#_main .yellow {
 				color: #ffdb00;
@@ -80,33 +79,19 @@
 	<body>
 		<div id="_main">
 			<header>
-<a class="btn_logo" title="logo" href="?click=logo" target="_self">
-	<img width="75" height="75" align="right" class="logo" alt="logo" src="http://listingslabcloud.com/img/png/listingslabcloud.png" />
-</a>
+
 <a href="?click=title">
 	<h1 class="title">Listingslab Cloud Hosting</h1>
-</a>
-<div style="clear:both;"></div>
+</a><div style="clear:both;"></div>
+<a title="Home" class="_button" href="http://listingslabcloud.com" target="_self">
+	Home</a>
+	
+<div style="clear:both; margin-bottom: 20px;"></div>
 			</header>
 			<div id="_content">
 				<div id="_left">
 					
-					
-
-				<nav style="margin-top:25px;">
-					<ul>
-<li>
-	<a  title="Home" class="_button" href="http://listingslabcloud.com/?referer=service_unavailable" target="_blank">
-	listingslabcloud.com
-	</a>
-</li>
-<li>
-	<a  title="Email" class="email" href="mailto:listingslab@gmail.com?subject=Service Unav" target="_blank">
-	Email
-	</a>
-</li>
-					</ul>
-				</nav>
+					<img height="374" width="121" src="http://listingslabcloud.com/img/png/mandy.png" />
 				<div style="clear:both;"></div>
 				</div>
 				<div id="_right">
@@ -140,8 +125,9 @@ you need, so it's cheaper and your hosting is better.</p>
 			</div>
 			
 			<footer>
+
 <a class="btn_github" title="Github" href="https://github.com/listingslab/Service_Unavailable" target="_blank">
-	<img align="right" width="20" class="github_img" alt="github repo" src="http://listingslabcloud.com/img/png/github.png" />
+	<img width="20" class="github_img" alt="github repo" src="http://listingslabcloud.com/img/png/github.png" />
 </a>
 			</footer>
 		</div>
