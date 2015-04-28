@@ -17,13 +17,9 @@
 		<script src="http://listingslabcloud.com/js/service_unavilable.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
-				//alert ('btn');
-				sa = [];
-				sa ['version'] = '2.0.1';
-				_btn ('._button', 'home', true);
 				setTimeout(function(){
 					try {
-						_ping_server ();
+						_service_unavilable ();
 						_css ($('#_main'), 'visibility', 'visible');
 					}catch (err){
 						alert (err);	
@@ -80,9 +76,7 @@
 
 <a href="?click=title">
 	<h1 class="title">Listingslab Cloud Hosting</h1>
-</a><div style="clear:both;"></div>
-<a title="Home" class="_button" href="http://listingslabcloud.com" target="_self">
-	Home</a>
+</a>
 	
 <div style="clear:both; margin-bottom: 20px;"></div>
 			</header>
@@ -122,12 +116,14 @@ you need, so it's cheaper and your hosting is better.</p>
 				<div style="clear:both;"></div>
 			</div>
 			
-			<footer>
-
+			<!--<footer>
+<div style="clear:both;"></div>
+<a title="Home" class="_button" href="http://listingslabcloud.com" target="_self">
+	Home</a>
 <a class="btn_github" title="Github" href="https://github.com/listingslab/Service_Unavailable" target="_blank">
 	<img width="20" class="github_img" alt="github repo" src="http://listingslabcloud.com/img/png/github.png" />
 </a>
-			</footer>
+			</footer>-->
 		</div>
 	</body>
 </html>
